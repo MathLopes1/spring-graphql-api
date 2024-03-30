@@ -8,7 +8,6 @@ Este é um guia para a API GraphQL construída utilizando Spring Boot como frame
 
 - **Spring Boot**: Framework para construção de aplicações Java.
 - **GraphQL**: Linguagem de consulta e manipulação de dados.
-- **Spring Data JPA**: Facilita o acesso a bancos de dados relacionais.
 - **H2 Database**: Banco de dados em memória para desenvolvimento.
 
 ## Pré-requisitos
