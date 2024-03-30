@@ -1,7 +1,13 @@
 package com.graphql.api.services;
 
-import org.springframework.stereotype.Service;
+import com.graphql.api.domain.Category;
+import com.graphql.api.dto.CategoryDTO;
 
-@Service
-public class CategoryService {
+import java.util.Optional;
+import java.util.UUID;
+
+public interface CategoryService {
+    Category createCategory(CategoryDTO category);
+
+    Optional<Category> findCategoryById(UUID id);
 }

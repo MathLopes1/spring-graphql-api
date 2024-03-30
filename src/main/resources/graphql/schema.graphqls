@@ -1,0 +1,32 @@
+type Mutation {
+   createCategory(category: CategoryDTO): Category
+   createProduct(product: ProductDTO): Product
+}
+
+type Query {
+    findCategoryById(id: ID): Category
+    findAllProduct: [Product]
+}
+
+type Category {
+    name: String
+    id: ID!
+}
+
+type Product {
+    id: ID!
+    name: String
+    price: Float
+    category: Category
+}
+
+input CategoryDTO {
+    name: String!
+}
+
+input ProductDTO {
+    name: String!
+    price: Float!
+    categoryId: ID!
+}
+
